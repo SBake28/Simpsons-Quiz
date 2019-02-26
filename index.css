@@ -17,7 +17,7 @@ body {
   height: 100%;
   min-height: 700px;
   margin: 0;
-  background: url('http://vignette4.wikia.nocookie.net/simpsons/images/a/a2/Wiki-background_update_2.jpg/revision/latest?cb=20111014041518') no-repeat 50% 50% fixed;
+  background: url('imgs/background.jpg') no-repeat 50% 50% fixed;
   background-size: cover;
 }
 
