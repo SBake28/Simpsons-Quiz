@@ -77,7 +77,7 @@ var questions = [
             "Abrham Springfield", 
             "Krusty The Clown"], 
   correctAnswer: "Jebediah Springfield",
-  image: "img/Question8.jpg"
+  image: "imgs/Question8.jpg"
   }, 
   {
   question: "Who shot Mr.Burns?",
