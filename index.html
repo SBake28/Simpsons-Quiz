@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>The Simpsons Quiz</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <link href="https://www.fontify.me/wf/0710fbea4026cc70b3e324a7ba7f8010" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <header>
+      <h1 class="textCenter">The Simpsons Quiz</h1>
+    </header>
+    <main>
+      <div class ="quizBox">
+        <div id = "startBox" class= "textCenter">
+          <button id="startQuiz" class="button"></button>
+          <p>Click the donut to begin...</p>
+          <p>mmm'.. donut</p>
+        </div>
+        <div id = "quiz" class="hidden">
+            
+        <div class = "statusBar">
+          <div class = "barBox left"><span class="score textCenter">Score: 0/10</span></div>
+          <div class = "barBox right"><span class="progress">Question: 1/10</span></div>
+        </div>
+            
+        <div class = "questions">
+          <div class = "questionPicture">
+            <img src="" alt="">
+          </div>
+            <h4 id ='js-question' class="textCenter">My Question Here</h4>
+          </div>
+            
+          <form id='answer-form'>
+            <label class='answer button textCenter'>
+              <input type="radio" name="answerChoice" required>
+              <span id = "opt1"></span>
+            </label>
+            <label class='answer button textCenter'>
+              <input type="radio" name="answerChoice" required>
+              <span id = "opt2"></span>
+            </label>
+            <label class='answer button textCenter'>
+              <input type="radio" name="answerChoice" required>
+              <span id = "opt3"></span>
+            </label>
+            <label class='answer button textCenter'>
+              <input type="radio" name="answerChoice" required>
+              <span id = "opt4"></span>
+            </label>
+            <div class = footerDiv>
+              <button id='submit-answer' class="button noAnswerSelected" type="submit" data-popup-open="popup-feedback">Submit answer</button>
+            </div>
+          </form>
+            
+          <div class="popup" data-popup="popup-feedback">
+            <div class="popup-inner">
+              <h3 class='textCenter'></h3>
+              <div class = "popUpBoxImg">
+                <img src="" alt="">
+              </div>
+              <div class= "popUpNextButton">
+                <h4 class= 'textCenter'><a data-popup-close="popup-feedback" class="close-feedback" href="#">Proceed</a></h4>
+              </div>
+              <a id='close-feedback-modal' class="popup-close close-feedback" data-popup-close="popup-feedback" href="#">X</a>
+            </div>
+          </div>
+        </div>
+          
+        <div class="js-results textCenter"></div>
+            
+        <div id="resultsSection" class="textCenter hidden">
+          <div class="resultsImg">
+            <img src="imgs/Homer_Simpson2.png" alt="Homer eating a donut">
+          </div>
+          <button id='startOver' class="button textCenter">Start over</button>
+        </div>
+      </div>
+    </main>
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.js"
+    integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+    crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
